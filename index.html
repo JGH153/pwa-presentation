@@ -14,7 +14,7 @@
 
 		<style>
 			.slides{
-				width: 95% !important;
+				/* width: 95% !important; */
 			}
 		</style>
 
@@ -32,15 +32,17 @@
 			<div class="slides">
 
                 <section>
-                    <h1>
+                    <h2>
 						Progressive Web Apps
 						<br>
 						(PWA)
-                    </h1>
+                    </h2>
 				</section>
 
 				<section>
-					A buzzword
+					<h2>
+                        Buzzword
+                    </h2>
 				</section>
 				
 				<section>
@@ -48,12 +50,12 @@
 				</section>
 
 				<section>
-					<img class="stretch" data-src="content/pwa/pwa-reliable.png">
-				</section>
-
-				<section>
-					A collection of tecnologies/features that enable a native like experiences with a seamless experiences despite changing conditions
-				</section>
+                    A collection of tecnologies/features that enable a native like experiences with a seamless experiences despite changing conditions
+                </section>
+                
+                <section>
+                    <img class="stretch" data-src="content/pwa/pwa-reliable.png">
+                </section>
 
 				<section>
 					<section>
@@ -61,7 +63,14 @@
 					</section>
 					<section>
 						Not one single thing
-					</section>
+                    </section>
+                    <section>
+                        <!-- move? -->
+                        <img class="stretch" data-src="content/pwa/responsive.jpg">
+                    </section>
+                    <section>
+                        A series of new browser capabilities
+                    </section>
 				</section>
 
 				<section>
@@ -69,46 +78,40 @@
 						What are we trying to solve with PWA?
 					</section>
 					<section>
-						The dream of the app
+						The dream of the native app
 					</section>
 					<section>
 						Getting your app installed is impossible
-					</section>
+                    </section>
+                    <section>
+                        Enhancing and improving the user experience
+                    </section>
+                    <section>
+                        <img class="stretch" data-src="content/pwa/noInternet.png">
+                    </section>
+                    <section>
+                        PWA can remove the need for a seperate native application
+                    </section>
 				</section>
-
-				<section>
-					<section>
-						The web is moving more and more towards mobilde
-					</section>
-					<section>
-						PWA aim to provide a native like experiencce for thise mobilde users (and some for desktop)
-					</section>
-					<section>
-						PWA can remove the need for a seperate native application
-					</section>
-
-				</section>
-
 
 				<section>
 					<section>
 						Whats included under the banner of PWA?
 					</section>
 					<section>
-							<ul>
-								<li>Responsive design</li>
-								<li>Progressive enhancements</li>
-								<li>Connectivity independent </li>
-								<li>App-like</li>
-								<li>Native features</li>
-								<li>Fresh/updated</li>
-								<li>Safe </li>
-								<li>Discoverable </li>
-								<li>Re-engageable (notifications)</li>
-								<li>Installable </li>
-								<li>Linkable</li>
-
-								
+                        <ul>
+                            <li>Responsive design</li>
+                            <li>Progressive enhancements</li>
+                            <li>Connectivity independent </li>
+                            <li>App-like</li>
+                            <li>Native features</li>
+                            <li>Fresh/updated</li>
+                            <li>Safe </li>
+                            <li>Discoverable </li>
+                            <li>Re-engageable (notifications)</li>
+                            <li>Installable </li>
+                            <li>Linkable</li>
+                        </ul>
 					</section>
 					<section>
 						<ul>
@@ -122,7 +125,6 @@
 							<li>Payment API</li>
 							<li>Vibration</li>
 							<li>VR/AR</li>
-
 						</ul>
 					</section>
 					<section>
@@ -136,41 +138,142 @@
 
 				<section>
 					<section>
-						Do not need to re-write website to support many features in PWA
-					</section>
-					<section>
-						Can also enchance smaler parts of an application
-					</section>
-					<section>
-						You can cherry pick featurs from PWA
-					</section>
-				</section>
-
-				<section>
-					<section>
 						Let's deep dive into a few important features
-					</section>
+                    </section>
+                    <section>
+                        Web worker
+                        <p class="fragment">
+                            Shared worker
+                        </p>
+                        <p class="fragment">
+                            Service worker
+                        </p>
+                    </section>
+                    <section>
+                        <img class="stretch" data-src="content/pwa/sw-lifecycle.png">    
+                    </section>
+                    <section>
+                        Offline capabilities and push notifications
+                    </section>
+                    <section>
+                        Always(ish) running
+                    </section>
+
+
+                    <section>
+                        Web App Manifest
+                        <p class="fragment">
+                            Not to be confused with the application cache manifest (depricated)
+                        </p>
+                    </section>
+                    <section>
+                        "Install" website
+                    </section>
+                    <section>
+                        <img class="stretch" data-src="content/pwa/manefest.jpg">
+                    </section>
+                    <section>
+                        Can remove browser UI, which is a problem on IOS
+                    </section>
+
+
+                    <section>
+                        Notifications
+                    </section>
+                    <section>
+                        In service worker
+                    </section>
+
+
+                    <section>
+                        Fast and secure (HTTPS only!)
+                    </section>
 				</section>
 
-               
+                <section>
+                    <section>
+                        Do not need to re-write website to support many features in PWA
+                    </section>
+                    <section>
+                        Can also enchance smaler parts of an application
+                    </section>
+                    <section>
+                        You can cherry pick featurs from PWA
+                    </section>
+                </section>  
 
 				<section>
 					<section>
 						Enhancing a angular-cli application with PWA features
 					</section>
 					<section>
-
-					</section>
-				</section>
+                        angular-cli.json
+                        <pre class="fragment"><code class="TypeScript" data-trim contenteditable>
+                            "serviceWorker": true
+                        </code></pre>  
+                        <pre class="fragment"><code class="TypeScript" data-trim contenteditable>
+                            npm i @angular/service-worker --S
+                        </code></pre> 
+                        <pre class="fragment"><code class="TypeScript" data-trim contenteditable>
+                            ng build --prod
+                        </code></pre> 
+                    </section>
+                    <section>
+                        Manifest
+                        <p class="fragment">
+                            New manifest.json file in src/
+                        </p>
+                        <pre class="fragment"><code class="TypeScript" data-trim contenteditable>
+                            <link rel="mannifest" href="manifest.json" />
+                        </code></pre> 
+                    </section>
+                </section>
+                
+                <section>
+                    <section>
+                        Problems with PWA
+                    </section>
+                    <section>
+                        No application can work truly offline
+                    </section>
+                    <section>
+                        Service worker cloggage is going to be a problem
+                    </section>
+                    <section>
+                        You don't want to "install" EVERY WEBSITE YOU USE
+                    </section>
+                    <section>
+                        Fun fact: You can make truly evil sites with PWA
+                        <p class="fragment">
+                            Service worker notifications misuse, and hypercatching
+                        </p>
+                        <p class="fragment">
+                            Mobile vibration
+                        </p>
+                        <p class="fragment">
+                            Copy paste missusing
+                        </p>
+                        <p class="fragment">
+                            Constant fullscreen
+                        </p>
+                        <p class="fragment">
+                            Share website abuse
+                        </p>
+                    </section>
+                </section>
 
 				<section>
-					Fun fact: You can make truly evil sites with PWA
-				</section>
+                    Core features finally will get safari support
+                </section>
                 
 
 				<section>
                     Jan Greger Hemb <br />
                     www.github.com/JGH153<br />
+                </section>
+
+                <section>
+                    https://whatwebcando.today/
                 </section>
 
                 <section>
