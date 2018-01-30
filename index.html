@@ -139,9 +139,6 @@
 					<section>
 						That's a LONG list
 					</section>
-					<section>
-						Overview
-					</section>
 				</section>
 				
 
@@ -171,6 +168,9 @@
                     <section>
                         Always(ish) running
                     </section>
+                    <section>
+                        Bacground sync
+                    </section>
 
 				</section>
 
@@ -189,15 +189,47 @@
                         <img class="stretch" data-src="content/pwa/manefest.jpg">
                     </section>
                     <section>
-                        Can remove browser UI, which is a problem on IOS
+                        Can remove browser UI
+                        <p class="fragment">
+                            which is a problem on IOS
+                        </p>
                     </section>
 					
 				</section>
 
                 <section>
 
+                    <script>
+                    
+                    function requestPermission() {
+  if (!('Notification' in window)) {
+    alert('Notification API not supported!');
+    return;
+  }
+  
+  Notification.requestPermission(function (result) {
+    $status.innerText = result;
+  });
+}
+
+function nonPersistentNotification() {
+    if (!('Notification' in window)) {
+      alert('Notification API not supported!');
+      return;
+    }
+    
+    try {
+      var notification = new Notification("Hi there - non-persistent!");
+    } catch (err) {
+      alert('Notification API error: ' + err);
+    }
+  }
+                    
+                    </script>
+
                     <section>
                         Notifications
+                        <p><button class="btn btn-default" onclick="nonPersistentNotification()">Persistent notification</button></p>
                     </section>
                     <section>
                         In service worker
