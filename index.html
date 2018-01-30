@@ -30,6 +30,7 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
+				<!-- https://vimeo.com/249183473 -->
 
                 <section>
                     <h2>
@@ -128,6 +129,14 @@
 						</ul>
 					</section>
 					<section>
+						<ul>
+							<li>Server side rendering</li>
+							<li>HTTP2</li>
+							<li>dns-prefetch</li>
+						</ul>
+					</section>
+
+					<section>
 						That's a LONG list
 					</section>
 					<section>
@@ -136,10 +145,11 @@
 				</section>
 				
 
+				
 				<section>
-					<section>
-						Let's deep dive into a few important features
-                    </section>
+					Let's deep dive into a few important features
+				</section>
+				<section>
                     <section>
                         Web worker
                         <p class="fragment">
@@ -148,7 +158,10 @@
                         <p class="fragment">
                             Service worker
                         </p>
-                    </section>
+					</section>
+					<section>
+						<img class="stretch" data-src="content/pwa/sw.png">    
+					</section>
                     <section>
                         <img class="stretch" data-src="content/pwa/sw-lifecycle.png">    
                     </section>
@@ -159,6 +172,9 @@
                         Always(ish) running
                     </section>
 
+				</section>
+
+                <section>
 
                     <section>
                         Web App Manifest
@@ -175,19 +191,41 @@
                     <section>
                         Can remove browser UI, which is a problem on IOS
                     </section>
+					
+				</section>
 
+                <section>
 
                     <section>
                         Notifications
                     </section>
                     <section>
                         In service worker
-                    </section>
+					</section>
+					
+				</section>
+
+                <section>
 
 
                     <section>
                         Fast and secure (HTTPS only!)
-                    </section>
+					</section>
+
+				</section>
+
+                <section>
+					
+
+					<section>
+						Web Payment
+					</section>
+					<section>
+						<img class="stretch" data-src="content/pwa/webpayment.png">	
+					</section>
+					<section>
+						<img class="stretch" data-src="content/pwa/webPaymentDone.png">	
+					</section>
 				</section>
 
                 <section>
@@ -199,7 +237,19 @@
                     </section>
                     <section>
                         You can cherry pick featurs from PWA
-                    </section>
+					</section>
+					<section>
+						Debugging PWA
+					</section>
+					<section>
+						<img class="stretch" data-src="content/pwa/devtools.png">	
+					</section>
+					<section>
+						<img class="stretch" data-src="content/pwa/debugManifest.png">	
+					</section>
+					<section>
+						Site cannot be installed: the manifest does not contain a suitable icon - PNG format of at least 144px is required, the sizes attribute must be set, and the purpose attribute, if set, must include "any".
+					</section>
                 </section>  
 
 				<section>
@@ -241,7 +291,16 @@
                     </section>
                     <section>
                         You don't want to "install" EVERY WEBSITE YOU USE
-                    </section>
+					</section>
+					<section>
+						Experimental, and changing
+					</section>
+					<section>
+						Minimal IE/Edge support
+						<p class="fragment">
+							Core features finally will get safari support
+						</p>
+					</section>
                     <section>
                         Fun fact: You can make truly evil sites with PWA
                         <p class="fragment">
@@ -262,9 +321,7 @@
                     </section>
                 </section>
 
-				<section>
-                    Core features finally will get safari support
-                </section>
+				
                 
 
 				<section>
