@@ -51,8 +51,8 @@
 				</section>
 
 				<section>
-                    A collection of tecnologies/features that enable a native like experiences with a seamless experiences despite changing conditions
-                </section>
+                    A collection of technologies/features that enable a native like applications with a seamless experiences despite changing conditions
+				</section>
                 
                 <section>
                     <img class="stretch" data-src="content/pwa/pwa-reliable.png">
@@ -83,19 +83,34 @@
 					</section>
 					<section>
 						Getting your app installed is impossible
-                    </section>
+					</section>
+					<section>
+						PWA to the rescure
+					</section>
                     <section>
                         Enhancing and improving the user experience
-                    </section>
+					</section>
                     <section>
                         <img class="stretch" data-src="content/pwa/noInternet.png">
                     </section>
                     <section>
                         PWA can remove the need for a seperate native application
-                    </section>
+					</section>
+					<section>
+						Need smaller and faster websites
+					</section>
 				</section>
 
 				<section>
+
+					<section>
+						New definition
+					</section>
+
+					<section>
+						Make web applications appear more like traditional applications or native mobile applications
+					</section>
+
 					<section>
 						Whats included under the banner of PWA?
 					</section>
@@ -133,6 +148,7 @@
 							<li>Server side rendering</li>
 							<li>HTTP2</li>
 							<li>dns-prefetch</li>
+							<li>App Shell</li>
 						</ul>
 					</section>
 
@@ -161,15 +177,18 @@
 					</section>
                     <section>
                         <img class="stretch" data-src="content/pwa/sw-lifecycle.png">    
-                    </section>
-                    <section>
-                        Offline capabilities and push notifications
-                    </section>
-                    <section>
+					</section>
+					<section>
                         Always(ish) running
                     </section>
                     <section>
-                        Bacground sync
+						Offline capabilities
+						<p class="fragment">
+							Push notifications
+						</p>
+                    </section>    
+                    <section>
+                        Background sync
                     </section>
 
 				</section>
@@ -178,22 +197,22 @@
 
                     <section>
                         Web App Manifest
-                        <p class="fragment">
-                            Not to be confused with the application cache manifest (depricated)
-                        </p>
                     </section>
                     <section>
                         "Install" website
                     </section>
                     <section>
                         <img class="stretch" data-src="content/pwa/manefest.jpg">
-                    </section>
-                    <section>
+					</section>
+					<section>
+						<img class="stretch" data-src="content/pwa/standalone.png">
+					</section>
+                    <!-- <section>
                         Can remove browser UI
                         <p class="fragment">
                             which is a problem on IOS
                         </p>
-                    </section>
+                    </section> -->
 					
 				</section>
 
@@ -229,7 +248,7 @@ function nonPersistentNotification() {
 
                     <section>
                         Notifications
-                        <p><button class="btn btn-default" onclick="nonPersistentNotification()">Persistent notification</button></p>
+                        <!-- <p><button class="btn btn-default" onclick="nonPersistentNotification()">Persistent notification</button></p> -->
                     </section>
                     <section>
                         In service worker
@@ -241,23 +260,9 @@ function nonPersistentNotification() {
 
 
                     <section>
-                        Fast and secure (HTTPS only!)
+                        Fast and secure (HTTP2 and HTTPS Only)
 					</section>
 
-				</section>
-
-                <section>
-					
-
-					<section>
-						Web Payment
-					</section>
-					<section>
-						<img class="stretch" data-src="content/pwa/webpayment.png">	
-					</section>
-					<section>
-						<img class="stretch" data-src="content/pwa/webPaymentDone.png">	
-					</section>
 				</section>
 
                 <section>
@@ -282,7 +287,22 @@ function nonPersistentNotification() {
 					<section>
 						Site cannot be installed: the manifest does not contain a suitable icon - PNG format of at least 144px is required, the sizes attribute must be set, and the purpose attribute, if set, must include "any".
 					</section>
-                </section>  
+					<section>
+						<img class="stretch" data-src="content/pwa/pwa-lighthouse.png">	
+					</section>
+					<section>
+						<img class="stretch" data-src="content/pwa/lighthouse.png">	
+					</section>
+				</section> 
+				
+				<section>
+					<section>
+						A definition?
+					</section>
+					<section>
+						Faster, smaller, more secure, more features, native-like and fully adaptive (design and connection)
+					</section>
+				</section>
 
 				<section>
 					<section>
@@ -322,7 +342,7 @@ function nonPersistentNotification() {
                         Service worker cloggage is going to be a problem
                     </section>
                     <section>
-                        You don't want to "install" EVERY WEBSITE YOU USE
+                        You don't want to "install" every website
 					</section>
 					<section>
 						Experimental, and changing
@@ -333,24 +353,6 @@ function nonPersistentNotification() {
 							Core features finally will get safari support
 						</p>
 					</section>
-                    <section>
-                        Fun fact: You can make truly evil sites with PWA
-                        <p class="fragment">
-                            Service worker notifications misuse, and hypercatching
-                        </p>
-                        <p class="fragment">
-                            Mobile vibration
-                        </p>
-                        <p class="fragment">
-                            Copy paste missusing
-                        </p>
-                        <p class="fragment">
-                            Constant fullscreen
-                        </p>
-                        <p class="fragment">
-                            Share website abuse
-                        </p>
-                    </section>
                 </section>
 
 				
@@ -367,7 +369,38 @@ function nonPersistentNotification() {
 
                 <section>
                     Questions?
-                </section>
+				</section>
+
+				<section>
+					<section>
+						Web Payment
+					</section>
+					<section>
+						<img class="stretch" data-src="content/pwa/webpayment.png">	
+					</section>
+					<section>
+						<img class="stretch" data-src="content/pwa/webPaymentDone.png">	
+					</section>
+				</section>
+				
+				<section>
+					Fun fact: You can make truly evil sites with PWA
+					<p class="fragment">
+						Service worker notifications misuse, and hypercatching
+					</p>
+					<p class="fragment">
+						Mobile vibration
+					</p>
+					<p class="fragment">
+						Copy paste missusing
+					</p>
+					<p class="fragment">
+						Constant fullscreen
+					</p>
+					<p class="fragment">
+						Share website abuse
+					</p>
+				</section>
 
 				<section>
 					This page is intentionally left blank
