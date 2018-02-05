@@ -225,45 +225,7 @@
 					
 				</section>
 
-                <section>
-
-                    <script>
-                    
-                    function requestPermission() {
-  if (!('Notification' in window)) {
-    alert('Notification API not supported!');
-    return;
-  }
-  
-  Notification.requestPermission(function (result) {
-    $status.innerText = result;
-  });
-}
-
-function nonPersistentNotification() {
-    if (!('Notification' in window)) {
-      alert('Notification API not supported!');
-      return;
-    }
-    
-    try {
-      var notification = new Notification("Hi there - non-persistent!");
-    } catch (err) {
-      alert('Notification API error: ' + err);
-    }
-  }
-                    
-                    </script>
-
-                    <section>
-                        Notifications
-                        <!-- <p><button class="btn btn-default" onclick="nonPersistentNotification()">Persistent notification</button></p> -->
-                    </section>
-                    <section>
-                        In service worker
-					</section>
-					
-				</section>
+              
 
                 <section>
                     Fast and secure (HTTP2 and HTTPS Only)
